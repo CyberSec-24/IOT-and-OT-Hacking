@@ -1,0 +1,36 @@
+IoT Architecture
+The IoT architecture includes several layers, from the Application layer at the top to the Edge Technology layer at the bottom. 
+
+These layers are designed in such a way that they can meet the requirements of various sectors, including societies, industry, enterprises, governments, etc.
+
+▪ Edge Technology Layer This layer consists of all the hardware components, including sensors, radio-frequency identification (RFID) tags, readers, or other soft sensors, and the device itself. 
+These entities are the primary part of the data sensors that are deployed in the field for monitoring or sensing various phenomena. 
+This layer plays an important part in data collection, and in connecting devices within the network and with the server.
+
+▪ Access Gateway Layer
+This layer helps to bridge the gap between two endpoints, such as a device and a client. 
+The initial data handling also takes place in this layer. This layer carries out message routing, message identification, and subscribing.
+
+▪ Internet Layer
+This is a crucial layer as it serves as the main component in carrying out communication between two endpoints, such as device-to-device, device-to-cloud, device-to-gateway, or back-end data sharing
+
+▪ Middleware Layer
+This is one of the most critical layers that operates in two-way mode.
+As the name suggests, this layer sits in the middle of the application layer and the hardware layer, thus behaving as an interface between these two layers.
+It is responsible for important functions such as data management, device management, and various issues like data analysis, data aggregation, data filtering, device information discovery, and access control.
+
+▪ Application Layer
+This layer, placed at the top of the stack, is responsible for the delivery of services to the relevant users from different sectors, including building, industrial, manufacturing, automobile, security, healthcare, etc
+
+
+
+
+
+
+
+
+
+
+
+
+
