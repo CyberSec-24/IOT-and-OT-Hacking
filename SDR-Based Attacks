@@ -1,0 +1,31 @@
+Software-defined radio (SDR) is a method of generating radio communications and implementing signal processing using software (or firmware), instead of the usual method of using hardware.
+
+Using this software-based radio communication system (self-created SDRs), an attacker can examine the communication signals in IoT networks and send spam content or texts to interconnected devices. 
+
+The SDR system can also change the transmission and reception of signals between devices, depending on their software implementations. 
+
+The attack can be carried out on both full-duplex (two-way communication) and half-duplex (one-way communication) transmission modes
+
+
+▪ Replay Attack 
+This is the major attack described in IoT threats, in which attackers can capture the command sequence from connected devices and use it for later retransmission. 
+
+An attacker can perform the below steps to launch a replay attack: o Attacker targets the specified frequency that is required to share information between devices
+
+o After obtaining the frequency, the attacker can capture the original data when the commands are initiated by the connected devices
+
+o Once the original data is collected, the attacker uses free tools such as URH (Universal Radio Hacker) to segregate the command sequence
+
+o Attacker then injects the segregated command sequence on the same frequency into the IoT network, which replays the commands or captured signals of the devices
+
+
+
+▪ Cryptanalysis Attack
+A cryptanalysis attack is another type of substantial attack on IoT devices.
+
+In this attack, the procedure used by the attacker is the same as in a replay attack except for one additional step, i.e., reverse-engineering the protocol to obtain the original signal. 
+
+To accomplish this task, the attacker must be skilled in cryptography, communication theory, and modulation scheme (to remove noises from the signal). 
+
+This attack is practically not as easy as a replay attack to launch, yet the attacker can try to breach security using various tools and procedures
+
