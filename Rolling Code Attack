@@ -1,0 +1,29 @@
+▪ Most smart vehicles use smart locking systems that involve the transmission of an RF signal in the form of a code from a modern key fob, which locks or unlocks the vehicle, to the receiver in the vehicle
+
+▪ This code that locks or unlocks a vehicle or garage is called a Rolling Code or Hopping Code. The attacker uses a jammer to thwart the transmission of a code
+
+▪ After obtaining the code, the attacker can use it to unlock and steal the vehicle
+
+Most smart vehicles use smart locking systems, which include an RF signal transmitted in the form of code from a modern key fob to lock or unlock the vehicle. 
+
+Here, the code sent to the vehicle is only used once and is different for every other use, which means if a vehicle receives the same code again, it rejects it.
+  
+The code that locks or unlocks a car or garage is called a rolling code or hopping code. 
+
+It is used in a keyless entry system to prevent replay attacks. An eavesdropper can capture the code transmitted and later use it to unlock the garage or vehicle. 
+
+To obtain the rolling code, the attacker thwarts the transmission of a signal from the key fob to the receiver in the vehicle. 
+  
+This attack is performed using a jamming device that simultaneously jams the signal and sniffs the code, and the attacker later uses that code to unlock the vehicle or the garage door
+
+▪ Victim presses car remote button and tries to unlock the car 
+
+▪ Attacker uses a jammer that jams the car’s reception of the rolling code sent by the victim and simultaneously sniffs the first code
+
+▪ The car does not unlock; victim tries again by sending a second code ▪ Attacker sniffs the second code 
+
+▪ On the second attempt by the victim, the attacker forwards the first code, which unlocks the car
+
+▪ The recorded second code is used later by the attacker to unlock and steal the vehicle
+
+
