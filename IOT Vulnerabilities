@@ -1,0 +1,161 @@
+1. Username Enumeration
+
+Attack Surface:- 
+▪ Administrative Interface 
+▪ Device Web Interface 
+▪ Cloud Interface 
+▪ Mobile Application
+
+▪ Ability to collect a set of valid usernames by interacting with the authentication mechanism
+
+
+2. Weak Passwords
+
+Attack Surface:- 
+▪ Administrative Interface 
+▪ Device Web Interface
+▪ Cloud Interface 
+▪ Mobile Application
+
+▪ Ability to set account passwords to “1234” or “123456”, for example
+▪ Usage of pre-programmed default passwords
+
+
+3. Account Lockout
+
+Attack Surface:- 
+▪ Administrative Interface
+▪ Device Web Interface 
+▪ Cloud Interface 
+▪ Mobile Application
+
+▪ Ability to continue sending authentication attempts after 3–5 failed login attempts
+
+
+4. Unencrypted Services
+
+Attack Surface:- 
+▪ Device Network Services 
+
+▪ Network services are not properly encrypted to prevent eavesdropping or tampering by attackers
+
+
+5. Two-factor Authentication
+
+Attack Surface:- 
+▪ Administrative Interface 
+▪ Cloud Web Interface 
+▪ Mobile Application
+
+▪ Lack of two-factor authentication mechanisms such as a security token or fingerprint scanner
+
+
+6. Poorly Implemented Encryption
+
+Attack Surface:- 
+▪ Device Network Services
+
+▪ Encryption is implemented; however, it is improperly configured or is not being properly updated, e.g., using SSL v2
+
+
+7. Update Sent Without Encryption
+
+Attack Surface:- 
+▪ Update Mechanism
+
+▪ Updates are transmitted over the network without using TLS or encrypting the update file itself
+
+
+8. Update Location Writable
+
+Attack Surface:- 
+▪ Update Mechanism
+
+▪ Storage location for update files is world writable, which can allow firmware to be modified and distributed to all users
+
+
+9. Denial of Service
+
+Attack Surface:- 
+▪ Device Network Services
+
+▪ Service can be attacked in a way that denies service to that service or the entire device
+
+
+10. Removal of Storage Media
+
+Attack Surface:- 
+▪ Device Physical Interfaces
+
+▪ Ability to physically remove the storage media from the device
+
+
+11. No Manual Update Mechanism
+
+Attack Surface:- 
+▪ Update Mechanism 
+
+▪ No ability to manually force an update check for the device
+
+
+12. Missing Update Mechanism
+
+Attack Surface:- 
+▪ Update Mechanism
+
+▪ No ability to update the device
+
+
+13. Firmware Version Display and/or Last Update Date
+
+Attack Surface:- 
+▪ Device Firmware
+
+▪ Current firmware version is not displayed and/or the date of last update is not displayed
+
+
+14. Firmware and Storage Extraction
+
+Attack Surface:- 
+▪ JTAG/SWD Interface 
+▪ In-Situ Dumping 
+▪ Intercepting an Over-the-Air (OTA) Update
+▪ Downloading from the Manufacturer’s Web Page
+▪ eMMC Tapping ▪ Unsoldering the SPI Flash/eMMC Chip and Reading It in an Adapter
+
+▪ Firmware contains a lot of useful information, like source code and binaries of running services, preset passwords, and SSH keys
+
+
+15. Manipulating the Code Execution Flow of the Device
+
+Attack Surface:- 
+▪ JTAG/SWD Interface 
+▪ Side-Channel Attacks like Glitching
+
+▪ With the help of a JTAG adapter and GNU debugger, we can modify the execution of firmware in the device and bypass almost all software-based security controls
+▪ Side-channel attacks can also modify the execution flow or can be used to leak interesting information from the device
+
+
+16. Obtaining Console Access
+
+Attack Surface:- 
+▪ Serial Interfaces (SPI/UART)
+
+▪ By connecting to a serial interface, we can obtain full console access to a device
+▪ Usually, security measures include custom bootloaders that prevent the attacker from entering single user mode, but that can also be bypassed
+
+
+17. Insecure Third-Party Components
+
+Attack Surface:- 
+▪ Software
+
+▪ Out-of-date versions of BusyBox, OpenSSL, SSH, web servers, etc
+
+
+
+
+
+
+
+
