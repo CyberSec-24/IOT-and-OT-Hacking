@@ -1,0 +1,49 @@
+The Top 10 IoT threats, according to the Open Web Application Security Project (OWASP), are listed below:
+
+▪ Weak, Guessable, or Hardcoded Passwords Using weak, guessable, or hardcoded passwords allows publicly available or unchangeable credentials to be determined via brute forcing. 
+This also includes backdoors in the firmware or client software that lead to unauthorized access to the deployed devices.
+
+▪ Insecure Network Services
+Insecure network services are prone to various attacks like buffer overflow attacks, which cause a denial-of-service scenario, thus leaving the device inaccessible to the user. 
+
+An attacker uses various automated tools such as port scanners and fuzzers to detect the open ports and exploit them to gain unauthorized access to services.
+
+These insecure network services that are open to the Internet may compromise the confidentiality, authenticity, integrity, or availability of information and also allow remote access to critical information
+
+▪ Insecure Ecosystem Interfaces
+Insecure ecosystem interfaces such as web, backend API, mobile, and cloud interfaces outside the device lead to compromised security of the device and its components.
+
+Common vulnerabilities in such interfaces include lack of authentication/authorization, lack of encryption or weak encryption, and lack of input/output filtering
+
+▪ Lack of Secure Update Mechanisms
+Lack of secure update mechanisms, such as a lack of firmware validation on the device, lack of secure delivery, lack of anti-rollback mechanisms, or lack of notifications of security changes, may be exploited to perform various attacks.
+
+▪ Use of Insecure or Outdated Components
+Use of outdated or older versions of software components or libraries, such as insecure customization of OS platforms or use of third-party hardware or software components from a compromised supply chain, may allow the devices themselves to be compromised.
+
+▪ Insufficient Privacy Protection
+Insufficient privacy protection allows the user’s personal information stored on the devices or ecosystem to be compromised
+
+▪ Insecure Data Transfer and Storage
+Lack of encryption and access control of data that is in transit or at rest may result in leakage of sensitive information to malicious users.
+
+▪ Lack of Device Management
+Lack of appropriate security support through device management on devices deployed in production, including asset management, update management, secure decommissioning, system monitoring, and response capabilities, may open the door to various attacks.
+
+▪ Insecure Default Settings
+Insecure or insufficient device settings restrict the operators from modifying configurations to make the device more secure.
+
+▪ Lack of Physical Hardening
+Lack of physical hardening measures allows potential attackers to acquire sensitive information that helps them in performing a remote attack or obtaining local control of the device
+
+
+
+
+
+
+
+
+
+
+
+
