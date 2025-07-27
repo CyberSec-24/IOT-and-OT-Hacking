@@ -1,0 +1,114 @@
+▪ Bluetooth Low Energy (BLE): BLE or Bluetooth Smart is a wireless personal area network. 
+This technology is designed to be applied in various sectors such as healthcare, security, entertainment, and fitness.
+
+▪ Light-Fidelity (Li-Fi): Li-Fi is like Wi-Fi with only two differences: 
+the mode of communication and the speed. Li-Fi is a Visible Light Communications (VLC) system that uses common household light bulbs for data transfer at a very high speed of 224 Gbps.
+
+▪ Near-Field Communication (NFC):
+NFC is a type of short-range communication that uses magnetic field induction to enable communication between two electronic devices. 
+It is primarily used in contactless mobile payment, social networking, and the identification of documents or other products.
+
+▪ QR Codes and Barcodes: 
+These codes are machine-readable tags that contain information about the product or item to which they are attached. 
+A quick response code, or QR code, is a two-dimensional code that stores product information and can be scanned using smartphones, whereas a barcode comes in both one-dimensional (1D) and two-dimensional (2D) forms of code.
+
+▪ Radio-Frequency Identification (RFID): 
+RFID stores data in tags that are read using electromagnetic fields. 
+RFID is used in many sectors including industrial, offices, companies, automobiles, pharmaceuticals, livestock, and pets.
+
+▪ Thread:
+A thread is an IPv6-based networking protocol for IoT devices. 
+Its main purpose is home automation so that the devices can communicate with each other on local wireless networks.
+
+▪ Wi-Fi:
+Wi-Fi is a technology that is widely used in wireless local area networking (LAN).
+At present, the most common Wi-Fi standard that is used in homes or companies is 802.11n, which offers a maximum speed of 600 Mbps and a range of approximately 50 m
+
+▪ Wi-Fi Direct: 
+This is used for peer-to-peer communication without the need for a wireless access point.
+Wi-Fi direct devices start communication only after deciding which device will act as an access point.
+
+▪ Z-Wave: 
+Z-Wave is a low-power, short-range communication designed primarily for home automation. 
+It provides a simple and reliable way to wirelessly monitor and control household devices like HVAC, thermostats, garages, home cinemas, etc.
+
+▪ Zig-Bee: 
+This is another short-range communication protocol based on the IEEE 203.15.4 standard. 
+Zig-Bee is used in devices that transfer data infrequently at a low rate in a restricted area and within a range of 10–100 m.
+
+▪ ANT: 
+Adaptive Network Topology (ANT) is a multicast wireless sensor network technology mainly used for short-range communication between devices related to sports and fitness sensors.
+
+
+Medium-Range Wireless Communication 
+
+▪ HaLow:
+This is another variant of the Wi-Fi standard; it provides an extended range, making it useful for communications in rural areas. 
+It offers low data rates, thus reducing the power and cost of transmission.
+
+▪ LTE-Advanced:
+LTE-Advanced is a standard for mobile communication that provides enhancement to LTE, focusing on providing higher capacity in terms of data rate, extended range, efficiency, and performance.
+
+▪ 6LoWPAN:
+IPv6 over Low-Power Wireless Personal Area Networks (6LoWPAN) is an Internet protocol used for communication between smaller and low-power devices with limited processing capacity, such as various IoT devices.
+
+▪ QUIC:
+Quick UDP Internet Connections (QUICs) are multiplexed connections between IoT devices over the User Datagram Protocol (UDP); they provide security equivalent to SSL/TLS.
+
+
+Long-Range Wireless Communication
+
+▪ LPWAN:
+Low Power Wide Area Networking (LPWAN) is a wireless telecommunication network, designed to provide long-range communications between two endpoints.
+Available LPWAN protocols and technologies include the following:
+
+o LoRaWAN:
+A Long Range Wide Area Network (LoRaWAN) is used to support applications such as mobile, industrial machine-to-machine, and secure two-way communications for IoT devices, smart cities, and healthcare applications.
+
+o Sigfox: 
+This is used in devices that have short battery life and need to transfer a limited amount of data.
+
+o Neul:
+This is used in a tiny part of the TV white space spectrum to deliver high-quality, high-power, high-coverage, and low-cost networks.
+
+▪ Very Small Aperture Terminal (VSAT): 
+VSAT is a communication protocol that is used for data transfer using small dish antennas for both broadband and narrowband data.
+
+▪ Cellular: 
+Cellular is a type of communication protocol that is used for communication over a longer distance.
+It is used to send high-quality data but with the drawbacks of being expensive and having high power consumption.
+
+▪ MQTT: 
+Message Queuing Telemetry Transport (MQTT) is an ISO standard lightweight protocol used to transmit messages for long-range wireless communication. 
+It helps in establishing connections to remote locations, for example via satellite links.
+
+▪ NB-IoT: 
+Narrowband IoT (NB-IoT) is a variant of LoRaWAN and Sigfox that uses more enhanced physical layer technology and the spectrum used for machine-to-machine communication.
+
+Wired Communication
+▪ Ethernet:
+Ethernet is the most commonly used type of network protocol today.
+It is a type of LAN (Local Area Network) that consists of a wired connection between computers in a small building, office, or campus.
+
+▪ Multimedia over Coax Alliance (MoCA): 
+MoCA is a type of network protocol that provides high-definition videos and related content to homes over existing coaxial cables.
+
+▪ Power-Line Communication (PLC): 
+This is a type of protocol that uses electrical wires to transmit power and data from one endpoint to another. 
+PLC is required for applications in different areas such as home automation, industrial devices, and broadband over power lines (BPL)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
