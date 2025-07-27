@@ -1,0 +1,56 @@
+IoT devices have very few security protection mechanisms against various emerging threats. 
+
+These devices can be infected by malware or malicious code at an alarming rate. 
+
+Attackers often exploit these poorly protected devices on the Internet to cause physical damage to the network, to wiretap the communication, and also to launch disruptive attacks such as DDoS.
+
+▪ DDoS Attack: An attacker converts the devices into an army of botnets to target a specific system or server, making it unavailable to provide services.
+
+▪ Attack on HVAC Systems: HVAC system vulnerabilities are exploited by attackers to steal confidential information such as user credentials and to perform further attacks on the target network.
+
+▪ Rolling Code Attack: An attacker jams and sniffs the signal to obtain the code transferred to a vehicle’s receiver; the attacker then uses it to unlock and steal the vehicle.
+
+▪ BlueBorne Attack: Attackers connect to nearby devices and exploit the vulnerabilities of the Bluetooth protocol to compromise the device.
+
+▪ Jamming Attack: An attacker jams the signal between the sender and the receiver with malicious traffic that makes the two endpoints unable to communicate with each other.
+
+▪ Remote Access using Backdoor: Attackers exploit vulnerabilities in the IoT device to turn it into a backdoor and gain access to an organization’s network.
+
+▪ Remote Access using Telnet: Attackers exploit an open telnet port to obtain information that is shared between the connected devices, including their software and hardware models.
+
+▪ Sybil Attack: An attacker uses multiple forged identities to create a strong illusion of traffic congestion, affecting communication between neighboring nodes and networks.
+
+▪ Exploit Kits: A malicious script is used by the attackers to exploit poorly patched vulnerabilities in an IoT device.
+
+▪ Man-in-the-Middle Attack: An attacker pretends to be a legitimate sender who intercepts all the communication between the sender and receiver and hijacks the communication.
+
+▪ Replay Attack: Attackers intercept legitimate messages from valid communication and continuously send the intercepted message to the target device to perform a denial-of-service attack or crash the target device.
+
+▪ Forged Malicious Device: Attackers replace authentic IoT devices with malicious devices if they have physical access to the network.
+
+▪ Side-Channel Attack: Attackers perform side-channel attacks by extracting information about encryption keys by observing the emission of signals, i.e., “side channels”, from IoT devices
+
+▪ Ransomware Attack: Ransomware is a type of malware that uses encryption to block a user’s access to his/her device either by locking the screen or by locking the user’s files.
+
+▪ Client Impersonation: An attacker masquerades as a legitimate smart device/server using a malicious device and compromises an IoT client device by impersonating it, to perform unauthorized activities or access sensitive information on behalf of the legitimate client.
+
+▪ SQL Injection Attack: Attackers perform SQL injection attacks by exploiting vulnerabilities in the mobile or web applications used to control the IoT devices, to gain access to the devices and perform further attacks on them.
+
+▪ SDR-Based Attack: Using a software-based radio communication system, an attacker can examine the communication signals passing through the IoT network and can send spam messages to the interconnected devices
+
+▪ Fault Injection Attack: A fault injection attack occurs when an attacker tries to introduce fault behavior in an IoT device, with the goal of exploiting these faults to compromise the security of that device.
+
+▪Network Pivoting: An attacker uses a malicious smart device to connect and gain access to a closed server, and then uses that connection to pivot other devices and network connections to the server to steal sensitive information.
+
+▪ DNS Rebinding Attack: DNS rebinding is a process of obtaining access to a victim’s router using a malicious JavaScript code injected on a web page.
+
+▪ Firmware Update (FOTA) Attack: Attacker intercepts and manipulates the firmware update process to inject malicious code
+
+
+
+
+
+
+
+
+
