@@ -1,0 +1,54 @@
+▪ Device-to-Device Communication Model
+In this type of communication, inter-connected devices interact with each other through the Internet, but they predominantly use protocols such as ZigBee, Z-Wave or Bluetooth. Device-to-device communication is most commonly used in smart home devices such as thermostats, light bulbs, door locks, CCTV cameras, and fridges, which transfer small data packets to each other at a low data rate. 
+
+This model is also popular in communication between wearable devices.  For example, an ECG/EKG device attached to the body of a patient will be paired to his/her smartphone and will send him/her notifications during an emergency
+
+
+▪ Device-to-Cloud Communication Model
+In this type of communication, devices communicate with the cloud directly, rather than directly communicating with the client to send or receive data or commands. 
+
+It uses communication protocols such as Wi-Fi or Ethernet, and sometimes uses Cellular as well.
+
+An example of Wi-Fi-based device-to-cloud communication is a CCTV camera that can be accessed on a smartphone from a remote location. 
+
+In this scenario, the device (here, the CCTV camera) cannot directly communicate with the client; rather, it first sends data to the cloud, and then, if the client inputs the correct credentials, he/she is then allowed to access the cloud, which in turn allows him/her to access the device at his/her home
+
+
+▪ Device-to-Gateway Communication Model
+In the device-to-gateway communication model, the IoT device communicates with an intermediate device called a gateway, which in turn communicates with the cloud service. 
+
+This gateway device could be a smartphone or a hub that is acting as an intermediate point, which also provides security features and data or protocol translation.
+
+The protocols generally used in this mode of communication are ZigBee and Z-Wave.
+
+If the application layer gateway is a smartphone, then it might take the form of an app that interacts with the IoT device and with the cloud. 
+
+This device might be a smart TV that connects to the cloud service through a mobile phone app.
+
+
+
+▪ Back-End Data-Sharing Communication Model
+This type of communication model extends the device-to-cloud communication type such that the data from the IoT devices can be accessed by authorized third parties. 
+
+Here, devices upload their data onto the cloud, which is later accessed or analyzed by third parties.
+
+An example of this model would be an analyzer of the yearly or monthly energy consumption of a company.
+
+Later, the analysis can be used to reduce the company’s expenditure on energy by following certain energy-harvesting or saving techniques
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
