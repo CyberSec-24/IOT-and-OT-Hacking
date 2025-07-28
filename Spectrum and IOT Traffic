@@ -1,0 +1,40 @@
+Gqrx is an SDR implemented with the help of the GNU Radio and Qt GUI tool. 
+
+Attackers use hardware devices such as FunCube dongle, Airspy, HackRF, RTL-SDR and USRP devices along with Gqrx SDR, to analyze the spectrum. 
+
+Attackers use Gqrx to observe the frequency bands of temperature/humidity sensors, light switches, car keys, M-bus transmitters, etc. 
+
+Gqrx can also enable an attacker to listen to or eavesdrop on radio FM frequencies or any radio conversations
+
+Steps to analyze the spectrum using Gqrx: 
+
+▪ The Gqrx and GNU Radio packages consist of all the Gqrx utilities. 
+Run the following commands to download and install this package from GitHub: 
+git clone https://github.com/gqrx-sdr/gqrx.git gqrx.git 
+cd gqrx.git 
+mkdir build 
+cd build cmake .. make 
+Attackers use hardware tools such as FunCube Dongle Pro+, which connects it to a USB port on a PC to analyze various frequency bands.
+
+▪ Launch Gqrx using the following command: gqrx
+▪ The Gqrx central window displays frequencies, and their noises can be heard via headphones or speakers
+
+
+Analyzing IoT Traffic using ONEKEY
+Attackers use tools such as ONEKEY to discover target IoT devices and analyze their network traffic to identify vulnerabilities. 
+
+IoT Inspector helps the attacker to breach privacy and security mechanisms. 
+
+This tool projects vulnerabilities in the form of tables and graphs. 
+
+It also allows the attacker to record and replay all information from the communicating devices to gather sensitive information.
+
+ONEKEY automatically scans and displays the available devices in the network.
+
+Selecting the target device can display the network activities and communication endpoints of that device.
+
+Upon clicking “network activities,” it displays a live chart of the traffic the device is accessing, and the communication endpoints will display the services the IoT device has received
+
+
+
+
