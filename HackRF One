@@ -1,0 +1,42 @@
+BlueBorne Attack Using HackRF One
+
+IoT devices involve wireless communication using RF, ZigBee, or LoRa.
+
+Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks, including replay, fuzzing, and jamming. 
+
+HackRF One is an advanced hardware-and software-defined radio with a range of 1 MHz to 6 GHz. 
+
+It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
+
+It can sniff a wide range of wireless protocols from GSM to Z-wave.
+
+
+Replay Attack using HackRF One Attackers perform replay attacks on target IoT devices using tools such as HackRF One. 
+
+To perform this attack, attackers need to discover the radio frequency of the target device. 
+
+Attackers use online resources such as the FCC database to determine the frequency of the target device. 
+
+Alternatively, attackers also use tools such as RTL-SDR to determine the frequency of a target device in the vicinity. 
+
+Once the frequency is obtained, attackers use tools such as HackRF One to launch a replay attack.
+
+
+Steps to perform a replay attack on the target IoT device:
+▪ Step 1: Record the device’s signal using the following command: hackrf_transfer -r connector.raw -f [device frequency] 
+Here, -r → used to record the signal, -f → frequency of the device
+
+Step 2: Replay the signal to the target using the following command: hackrf_transfer -t connector.raw -f [device frequency] 
+Here, -t → used to replay the signal
+
+
+
+
+
+
+
+
+
+
+
+
