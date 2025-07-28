@@ -8,3 +8,12 @@ For this, run ifconfig to identify your wireless card, here: wlan0
 ▪ Next, run Airodump-ng to scan all the nearby wireless networks: airodump-ng start wlan0mon
 
 ▪ Now, discover the target wireless network and note down the corresponding channel to sniff the traffic using Wireshark
+
+▪ Next, set up your wireless card to listen to the traffic on the same channel.
+For example, if the target network’s channel is 11, run airmon-ng to set your wireless card listening on channel 11: airmon-ng start wlan0mon 11
+
+▪ Launch Wireshark and double-click the interface that was kept in monitor mode, here wlan0mon, and start capturing the traffic
+
+
+
+
