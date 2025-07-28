@@ -1,0 +1,10 @@
+▪ Run Nmap to identify IoT devices using insecure HTTP ports for transmitting data: nmap -p 80,81,8080,8081 <Target IP address range>
+
+▪ Now, set up your wireless card in monitor mode and identify the channel used by the target router for broadcasting. 
+For this, run ifconfig to identify your wireless card, here: wlan0
+
+▪ Run airmon-ng to put the wireless card in monitor mode: airmon-ng start wlan0
+
+▪ Next, run Airodump-ng to scan all the nearby wireless networks: airodump-ng start wlan0mon
+
+▪ Now, discover the target wireless network and note down the corresponding channel to sniff the traffic using Wireshark
