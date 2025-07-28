@@ -1,0 +1,23 @@
+Vehicular communications play an important role in safe transportation by exchanging important safety messages and traffic updates, but even vehicular ad-hoc networks (VANETs) are not safe from the attackers’ reach. 
+
+An attacker uses multiple forged identities to create a strong illusion of traffic congestion, affecting communication between neighboring nodes and networks. 
+
+Sybil attacks in VANETs, which have a great impact on a network’s performance, are regarded as the most serious attacks. 
+
+This type of attack impairs the potential applications in VANETs by creating a strong illusion of traffic congestion.
+
+To perform this type of attack, a vehicle is declared to be present in different locations at the same time
+
+For example, let a node that spoofs itself as other nodes and launches an attack be called Sybil node “X.” 
+
+It is created by forming a new identity or stealing an existing legal identity. In proper communication, the other nodes “A” and “B” should only communicate with each other.
+
+However, in this scenario, node “X” intervenes as a known internal node and attacks the network. 
+
+Node “X” tries to communicate with the normal neighboring nodes (“A” and “B”) using multiple forged identities. 
+
+Thus, it creates significant chaos and security risks in the network
+
+
+
+
