@@ -1,0 +1,33 @@
+ChipWhisperer is an open-source toolchain mainly used for embedded hardware security research and for performing side-channel power analysis and glitching attacks. 
+
+These attacks are mainly used to extract cryptographic keys from a system.
+
+A side-channel attack is a cryptographic attack that leverages the implementation of the physical system to gain information, such as information regarding power consumption, time, sound, and electromagnetic leaks, instead of exploiting the vulnerabilities in the code.
+
+To perform a side-channel attack, the ChipWhisperer hardware needs the following two things: 
+▪ Capture Board: This has special hardware used for capturing very small signals with an exactly synchronized clock
+▪ Target Board: This is a processor that can be programmed for performing a secure operation
+
+Attackers use ChipWhisperer to break the implementation of complex algorithms such as AES and triple DES by using a technique called a power analysis attack, which is a form of side-channel attack. 
+
+In this method, the attacker takes control over the input data and the power consumption. 
+
+Then, the known input data is XORed with the unknown input data to obtain the unknown output data, and the guessed secret key is compared with the real measurements to obtain the original secret key
+
+Some of the classes of side-channel attacks used to obtain information about secrets in the system are cache attacks, timing attacks, power-monitoring attacks, electromagnetic attacks, acoustic cryptanalysis, fault analysis, data remanence, and optical attacks.
+
+ChipWhisperer is also used to inject glitches into any embedded hardware, with the intention of disclosing the information. 
+
+In this attack, the attacker can manipulate the code by gaining access to either the clock or input power of the device.
+
+
+
+
+
+
+
+
+
+
+
+
