@@ -1,0 +1,50 @@
+Hardware-based attack Attackers use hardware tools such as RTL-SDR to perform SDR-based attacks on IoT devices. 
+
+o RTL-SDR 
+
+RTL-SDR hardware is available in the form of a USB dongle that can be used to capture active radio signals in the vicinity (an Internet connection is not mandatory). 
+
+It is available in different models, such as DVB-T SDR, RTL2832, RTL dongle, or DVB-T dongle. 
+
+The RTL-STR tool can capture frequencies ranging from 500 kHz up to 1.75 GHz based on the selected SDR models.
+
+Attackers use an RTL-SDR radio scanner to perform the following activities: 
+• Receiving and decoding GPS signals 
+• Analyzing spectrum 
+• Listening to DAB broadcast radio 
+•Listening to and decoding HD radio 
+• Sniffing GSM signals
+
+
+ Software-based attack
+Along with hardware tools, attackers can also assault SDR-based IoT devices using various software tools, such as GNU Radio
+
+GNU Radio 
+
+The GNU Radio tool makes use of external RF hardware to generate SDR. 
+
+It offers a framework and the required tools to generate software radio signals. 
+
+It also offers processing units for signals to implement software radios. 
+
+Attackers use GNU Radio to perform various SDR-based attacks on target IoT devices. 
+
+Before attacking the target device, attackers need to build and configure GNU Radio. 
+
+After the successful installation of GNU Radio, attackers use the tools below to perform further exploitation.
+
+GNU Radio consists of a number of pre-defined programs and tools, which can be used for a variety of tasks. 
+• uhd_ft → A spectrum analyzer tool that can be connected to a UHD device to find the spectrum at a given frequency
+• uhd_rx_cfile → Stores wave samples with the help of a UHD device; samples can be stored in a file and analyzed later using GNU Radio or similar tools such as Matlab or Octave
+• uhd_rx_nogui → Used to obtain and listen to the incoming signals on the audio device
+• uhd_siggen_gui → Used to create simple signals such as sine, square, or noise
+• gr_plot → Used to present previously recorded samples saved in a file
+
+
+
+
+
+
+
+
+
