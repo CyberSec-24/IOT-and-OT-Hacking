@@ -1,0 +1,42 @@
+Attackers identify various serial and parallel interfaces such as universal asynchronous receiver-transmitter (UART), Serial Peripheral Interface (SPI), Joint Test Action Group (JTAG), and Inter-Integrated Circuit (I2C) to gain access to a shell, extract firmware, and so on. 
+
+Attackers use tools such as BUS Auditor, Damn Insecure and Vulnerable Application (DIVA), and a printed circuit board (PCB) to identify interfaces.
+
+BUS Auditor consists of 16 independent channels (CH0 to CH15). Firstly, the ground pins of both BUS Auditor and the DIVA IoT board are connected.
+
+Attackers identify various serial and parallel interfaces such as UART, SPI, JTAG, and I2C to gain access to a shell, extract firmware, and so on 
+
+▪ Attackers use tools such as BUS Auditor, Damn Insecure and Vulnerable Application (DIVA), and a PCB to identify interfaces
+
+
+UART
+Listed below are the steps involved in Identifying UART on a PCB without the data of micro controllers: 
+1. Connect the two channels CH0 and CH1 of BUS Auditor to the UART header. 
+2. Connect both the DIVA IoT board and BUS Auditor to the computer.
+3. Run the following command in the EXPLIoT framework: run busauditor.generic.uartscan -v 3.3 -p /dev/ttyACM0 -s 0 -e 1
+-v → voltage 
+-p → dev/tty* port 
+-s → starting channel 
+-e → ending channel
+
+
+JTAG
+The Joint Test Action Group (JTAG) adapted as IEEE 1149.1 consists of four pins—Test Mode Select (TMS), Test Clock (TCK), Test Data In (TDI), and Test Data Out (TDO)—and one additional optional pin, Test Reset (TRST).
+
+Listed below are the steps involved in identifying JTAG: 
+1. Connect the CH0 to CH8 channels of BUS Auditor to the JTAG header. 
+2. Connect both the DIVA board and BUS Auditor to the computer.
+3. Run the following command in the EXPLIoT framework: run busauditor.generic.jtagscan -v 3.3 -p /dev/ttyACM0 -s 0 -e 10
+
+I2C
+Inter-Integrated Circuit (I2C) uses serial data (SDA) to send and receive data and a serial clock (SCL). 
+
+Listed below are the steps involved in identifying I2C: 
+1. Connect the CH0 to CH8 channels of BUS Auditor to the header.
+2. Connect both the DIVA board and BUS Auditor to the computer. 
+3. Run the following command in the EXPLIoT framework:
+run busauditor.generic.i2scan -v 3.3 -p /dev/ttyACM0 -s 0 -e 10I2C Inter-Integrated Circuit (I2C) uses serial data (SDA) to send and receive data and a serial clock (SCL). 
+
+
+SPI
+Attackers perform a Google search to identify a Serial Peripheral Interface (SPI) and its pinouts using the chip numbers
