@@ -1,0 +1,21 @@
+Replay Attack
+In a replay attack, attackers intercept legitimate messages from a valid communication and continuously send the intercepted message to the target device to perform a DoS attack or delay it to manipulate the message or crash the target device. 
+
+For example, consider a replay attack that regenerates the signal used to control IoT devices as like a front door. 
+
+The front door uses a lock that is opened using simple infrared signals. 
+
+Essentially, the attacker records the infrared modulation pattern, reproduces the signal, and performs a replay attack on the door to unlock it
+
+
+
+Side-Channel Attack
+Attackers perform a side-channel attack by extracting information about encryption keys by observing the emission of signals, i.e., “side channels” from IoT devices. 
+
+All devices emit these signals that provide information about the internal computing process, either via power consumption or electromagnetic emanations. 
+
+Attackers carefully observe side-channel emissions to acquire all possible knowledge about varying power consumption so they can access and duplicate the encryption key non-evasively. 
+
+The main advantage of this attack is that it is easy and requires less time to access encryption keys. 
+
+Information leaked from the vulnerable devices helps the attackers to exploit other side-channel techniques, such as performing power-consuming attacks and time-based attacks.
