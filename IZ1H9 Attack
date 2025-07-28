@@ -1,0 +1,53 @@
+IZ1H9 is a Mirai-based botnet malware discovered in early 2021 and will continue to spread until 2023.
+
+Botnet malware has proliferated owing to the exploitation of various vulnerabilities in IoT networks. 
+
+Once a vulnerable device has been identified and infected, IZ1H9 adds the infected device to the botnet fleet. 
+
+The malware compromises and hijacks the computational resources of the vulnerable devices, using them for distributed denial of service (DDoS) attacks.
+
+IZ1H9 uses a sophisticated shell script downloader to bypass security solutions, hide their presence, and establish a persistent connection with a command-and-control (C2) server.
+
+IZ1H9 Attack Scenario: 
+▪ Step 1: Pre-exploitation Attackers identify and select targets running the Linux operating systems.
+They then search for weakly configured devices and exploit vulnerabilities in the exposed servers and networking devices in the IoT environment.
+Attackers attempt to scan and exploit devices containing the following vulnerabilities: o Tenda G103 command injection vulnerability 
+
+o LB-Link command injection vulnerability 
+o DCN DCBI-Netlog-LAB remote code execution vulnerability 
+o Zyxel remote code execution vulnerability
+
+
+▪ Step 2: Exploitation Attackers attempt to download and execute a shellscript downloader (lb.sh) from IP 163.123.143[.]126 on the vulnerable devices. 
+The shell script downloader deletes logs to hide its tracks and downloads bot clients for different Linux architectures, such as
+
+o hxxp://163.123.143[.]126/bins/dark.x86 
+o hxxp://163.123.143[.]126/bins/dark.mips 
+o hxxp://163.123.143[.]126/bins/dark.mpsl 
+o hxxp://163.123.143[.]126/bins/dark.arm4 
+
+Both clients are downloaded from URLs, such as hxxp://2.56.59[.]215/i.sh and hxxp://212.192.241[.]72/lolol.sh, to contact a C2 domain dotheneedfull[.]club, and they resolve it to 212.192.241.72.
+
+The botnet client ensures that only a single execution instance exists.
+If a botnet process already exists on the device, the botnet client overwrites the current process and starts a new process
+
+The IZ1H9 variant decrypts its configuration strings using an XOR decryption with the key 0xBAADF00D
+
+The IZ1H9 variant then spread through the HTTP, SSH, and Telnet channels.
+For SSH and Telnet, the variant spreads through brute-force attacks using a list of nearly 100 weak username and password combinations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
