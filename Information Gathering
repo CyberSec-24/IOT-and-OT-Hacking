@@ -1,0 +1,31 @@
+CIRT.net’s default password database is an online database that stores default passwords for various devices, including those used in critical infrastructures.
+
+Attackers can use this database to obtain various default passwords for a wide range of devices such as routers, switches, industrial control systems (ICS), and more.
+
+
+ Kamerka-GUI
+Kamerka-GUI is an OT reconnaissance tool designed to locate and map Internet-facing industrial control systems (ICS). 
+
+The tool utilizes Shodan’s advanced search filters to identify specific ICS devices such as SCADA systems, PLCs, HMIs, and RTUs. 
+
+Attackers can identify country-specific vulnerable ICS devices using the Kamerka-GUI. 
+
+The tool also displays the locations of the identified ICS devices on an interactive map, offering a clear visual representation of their distribution.
+
+They can also generate heat maps to highlight the regions with high concentrations of vulnerable devices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
