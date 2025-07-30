@@ -1,0 +1,40 @@
+PLCs are susceptible to cyber-attacks as they are used for controlling the physical processes of the critical infrastructures. 
+
+Attackers identify PLCs exposed to the Internet using online tools such as Shodan. Compromised PLCs can pose a serious security threat to organizations. 
+
+Attackers can tamper with the integrity and availability of the PLC systems by exploiting pin control operations and can launch attacks such as payload sabotages and PLC rootkits.
+
+
+Steps used to perform a PLC rootkit attack: 
+▪ Step 1: Attacker gains authorized access to the PLC device by injecting a rootkit. 
+Then, he performs a control-flow attack against the PLC runtime to guess the default password and gain root-level access to the PLC.
+
+▪ Step 2: Now, the attacker maps the input and output modules along with their locations in the memory to overwrite the input and output PLC parameters.
+
+▪ Step 3: After learning about the I/O pins and the PLC logic mapping, the attacker manipulates the I/O initialization sequence, thus taking complete control over the PLC operations
+
+
+A PLC rootkit can make use of the architectural flaws in the microprocessors and bypass the modern detection mechanisms. 
+
+Using this attack, the attacker can gain full control of the PLC input and output processing by manipulating the I/O initialization. 
+
+A PLC rootkit attack is also referred to as a PLC ghost attack. To perform this attack, attackers require in-depth knowledge of PLC architecture.
+
+The CPU of the PLC operates in two modes, i.e., programming mode and run mode.
+
+In the programming mode, the PLC can remotely download the code from any computer, and the run mode is used for executing the actual code.
+
+After gaining access to the PLC, attackers can download the malware code to the PLC that is stored by the CPU. This malicious code is executed in place of the original code. 
+
+Now, the attacker manipulates the input and output to gain complete control over mechanical devices and further damage or destruct their operation
+
+
+
+
+
+
+
+
+
+
+
