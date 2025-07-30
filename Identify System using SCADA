@@ -1,0 +1,38 @@
+The Shodan search engine helps attackers to gather information about OT devices connected to the Internet. 
+This online tool can be used to obtain details of SCADA systems that are used in water treatment plants, nuclear power plants, HVAC systems, electrical transmission systems, home heating systems, etc.
+
+ Identifying SCADA systems using port numbers ICS/SCADA systems use multiple protocols that are unique to the manufacturers of PLCs.
+
+Some of the important SCADA protocols include Modbus port 502, Fieldbus port 1089-91, DNP port 19999, Ethernet/IP port 2222, DNP3 port 20000, PROFINET port 34962-64, and EtherCAT port 34980. 
+
+Detecting the ports on which these systems operate allows an attacker to identify vulnerable SCADA systems connected to the Internet.
+
+port:502 (Retrieves all the ICS/SCADA systems with Modbus port 502 enabled)
+
+
+▪ Discovering SCADA systems using PLC name
+Attackers can also discover SCADA systems through version numbers, PLC names, or manufacturer names.
+Using Shodan, the attacker can search for the systems banner that displays information such as PLC name, manufacturer, and versions.
+For example, Schneider Electric is the company that deploys various Modbus protocols associated with ICS systems. 
+The attacker can discover all the systems with the company names in their banner using Shodan.
+Search for SCADA systems using PLC name:
+For example, the search string “Schneider Electric” displays all systems that deploy Schneider Electric products.
+
+▪ Searching SCADA systems based on geolocation Search for SCADA systems using geolocation: SCADA Country:"US" (displays all SCADA systems present in the US)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
