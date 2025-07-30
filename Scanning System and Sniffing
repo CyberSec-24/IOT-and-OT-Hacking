@@ -92,6 +92,15 @@ Attackers manipulate the captured packets and send a malicious payload to the Mo
 Modbus/TCP does not have any in-built encryption or security features, so attackers can easily gather information from the data packets being transmitted between the network and a Modbus port on a device.
 
 
+Discovering ICS/SCADA Network Protocols using Malcolm
+
+Malcolm is a powerful network traffic analysis tool that can be used by attackers to gain insights into the protocols used in industrial control systems (ICS) environments. 
+
+It provides proper visibility into network communications using two intuitive interfaces: the OpenSearch dashboard, 
+which is a flexible data visualization plugin with multiple prebuilt dashboards providing an easy overview of network protocols, and Arkime, which is a powerful tool that can be used to find and identify network sessions with suspected security incidents. 
+
+Additionally, it supports secure communication carried out both from the user interface and remote log forwarders using standard encryption protocols
+
 
 
 
