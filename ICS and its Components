@@ -1,0 +1,161 @@
+The Industrial Control System (ICS) is an essential part of every industrial process and critical infrastructure found in industry.
+
+A typical ICS represents the information system that controls and supports all types of industrial processes, such as production, manufacturing, product handling, distribution, etc.
+
+An ICS often refers to a collection of different types of control systems and their associated equipment, such as systems, devices, networks, and controls used to operate and automate several industrial processes
+
+The process is the part of an ICS system that is mainly responsible for producing the output. 
+
+The control is the part of an ICS system that includes the instructions needed to obtain the desired output. 
+
+This control part is either fully automated or may involve human intervention in the process loop. 
+
+The operation of ICS systems can be configured in three modes, namely open loop, closed loop, and manual loop mode.
+
+
+▪ Open Loop: The output of the system depends on the preconfigured settings
+
+▪ Closed Loop: The output always has an effect on the input to acquire the desired objective.
+
+▪ Manual Loop: The system is totally under the control of humans.
+
+
+The controller (control) of the ICS system is primarily responsible for maintaining compliance with the desired specifications. 
+
+Generally, ICS systems include multiple control loops, HMIs, and tools used for remote maintenance and diagnostics. 
+
+The remote management and diagnostics tools are built using various networking protocols. 
+
+
+▪ Distributed Control System (DCS)
+
+A DCS is used to control production systems spread within the same geographical location. 
+
+Such systems are primarily used for large, complex, and distributed processes that are carried out in industries such as chemical manufacturing and nuclear plants, oil refineries, water and sewage treatment plants, electric power generation plants, and automobile and pharmaceutical manufacturing. 
+
+A DCS is generally a highly engineered and large-scale control system that is often used to perform an industry-specific task
+
+To attain the process control, a DCS employs various feedback and feedforward loops along with key product conditions that are established as per the targeted set points. 
+
+It operates using a centralized supervisory control loop, such as SCADA and MTU, that connects a group of localized controllers such as RTU/PLC to execute the overall tasks required for the working of an entire production process
+
+The primary reason for choosing DCS systems in industry is the adaptability and flexibility that it provides in controlling distributed discrete field devices and their operating stations. 
+
+Moreover, a DCS is scalable and hence can be arrayed either during initial installation as a large integrated system or as a modular system that can be integrated as per the requirements.
+
+DCSs are in a state of constant development as new technologies such as wireless systems and protocols, remote transmission, logging and data historian, and embedded web servers are being included over time
+
+
+** Supervisory Control and Data Acquisition (SCADA) **
+
+SCADA is a centralized supervisory control system that is used for controlling and monitoring industrial facilities and infrastructure.
+
+Many organizations incorporate SCADA systems for the automation of complex industrial processes, measuring trends in real time, and the detection and correction of problems.
+
+The SCADA system is a centralized system that provides supervisory control and also enables real-time acquisition of data from dispersed assets used in industrial processes. 
+
+It consists of hardware and software components that collect and send data to manage and control processes both locally and at remote locations. 
+
+The collected data is stored in longtime storage devices such as a data historian to help the operators interpret the data and enable different setpoints. 
+
+These setpoints help the system in efficiently responding to unusual actions, either by sending commands themselves or sending alerts to an operator.
+
+SCADA systems collect information from field devices and transmit it to a central computer system. 
+
+This information is displayed to the operator in a graphical or textual format, enabling the operator to control and monitor the entire SCADA system from a central location in real time
+
+ The information from the RTU is controlled and processed by the control server, and the field devices are controlled and monitored by the RTU or PLC.
+
+The SCADA software is programmed to inform the entire system regarding what should be monitored, when it should be monitored, and what the acceptable parameter ranges are, in addition to informing the system regarding the response that needs to be initiated when the parameter values exceed the set ranges. 
+
+An IED may collect the data and transfer it to the control server directly, or a local RTU may instruct the IED to collect the data and send it to the control server. 
+
+The IED includes a communication interface for monitoring and controlling various sensors and equipment. 
+
+IEDs are either directly controlled by the control server or include local programming that enables them to act independently without the intervention of the control server. 
+
+SCADA systems are fault-tolerant systems with redundant systems. This redundancy may not be sufficient to protect SCADA systems from malicious attacks
+
+
+**  Programmable Logic Controller (PLC) **
+A PLC is a real-time digital computer used for industrial automation. 
+
+PLCs are considered more than just digital computers in various industrial control systems due to their extraordinary features such as robust construction, ease of programming, sequential control, ease of hardware use, timers and counters, and reliable controlling capabilities. 
+
+They are essentially built to survive severe industrial environments.
+
+The industries in which PLCs are used include the steel, automobile, energy, chemical, glass, paper, cement manufacturing industries.
+
+A PLC system consists of three modules:
+
+1. CPU Module: 
+The memory part consists of both RAM and ROM memories. RAM stores user-written programs, whereas ROM stores operating systems, drivers, and application programs. 
+
+PLCs also include retentive memory that is used to preserve user programs and data when there is a breakage in power supply. 
+
+This retentive memory helps in resuming the execution of the user program once the power supply returns. 
+
+For this reason, PLCs generally do not use a monitor or keyboard for reprogramming the processor whenever the power fails.
+
+
+2. Power Supply Module: 
+The power supply module provides the necessary supply of power required for CPU and I/O modules by converting AC to DC.
+
+This module is essentially responsible for running the system. 
+
+A 5 V DC output from the power supply module is used to run the computer circuitry of the PLC, whereas in some PLCs, a 24 V DC output from the power supply module is used to run sensors and actuators
+
+3. I/O Modules:
+The input and output modules of the PLC system are used in connecting the sensors and actuators with the system for sensing and controlling real-time values such as pressure, temperature, and flow
+
+The main purpose of a PLC is to make machinery and systems work automatically without human intervention. 
+
+Therefore, a PLC is very important, as it is responsible for all the growth, manufacturing, production, etc
+
+
+** Basic Process Control System (BPCS) **
+
+A BPCS is responsible for performing process control and monitoring for industrial infrastructure. 
+
+It is a system that responds to input signals from processes and associated equipment to generate output signals that allow the process and its associated equipment to operate based on an approved design control strategy. 
+
+BPCS systems are dynamic in nature and are highly adaptable to changing process condition.
+
+The use of BPCSs is crucial in industry as they act as the first layer of protection against any unsafe or hazardous condition to the equipment.
+
+BPCS systems are often used to push the performance limits to attain the desired performance.
+
+BPCSs differ from safety control systems in terms of security, as they lack diagnostic routines to identify any system flaws. 
+
+However, they can meet a wide range of industrial challenges related to system operation and business monitoring could benefit from a well-designed control system
+
+
+**  Safety Instrumented Systems (SIS) **
+ 
+They monitor and perform “specific control functions” to shut down the monitored system or bring it to a predefined safe state to reduce the adverse impacts of an incident. 
+
+They function as an essential component of a risk management strategy that uses layers of protection to prevent the operational boundaries of the critical process from reaching an unsafe operating condition. 
+
+In industry, an SIS overrides the BPCS operationally and functions when BPCS does not operate a process within the normal operational parameters. 
+
+For a given condition, if BPCS starts operating beyond normal operational limits, the SIS provides an automated control environment to detect and respond to the critical process.
+
+SIS either preserves the state or changes it to a safe state, i.e., equipment or process shutdown.
+
+
+The functional requirements of the work performed by SIS and how efficiently it should be carried out can be determined from Hazard and Operability Studies (HAZOP), Layers of Protection Analysis (LOPA), risk graphs, etc.
+
+The SIS system works independently from other control systems
+
+As no component in a system can be completely immune to failure, it is essential for industries to test SIS systems constantly. 
+
+It is also important to conduct an assessment of its basic cybersecurity environment to ensure the smooth operations of the SIS. 
+
+The main aim of assessing the working conditions of the SIS system is to guarantee safety and of the SIS so that it remains at its actual design levels.
+
+
+
+
+
+
+
