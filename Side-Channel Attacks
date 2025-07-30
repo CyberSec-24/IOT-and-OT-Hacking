@@ -1,0 +1,46 @@
+Attackers perform a side-channel attack by monitoring physical implementation of a target system to obtain critical information. 
+
+Attackers use two techniques, namely timing analysis, and power analysis to perform side-channel attacks on the target OT systems.
+
+The timing-analysis attack is based on the amount of time taken by the device to execute different computations.
+
+The power analysis attack is based on the change in power consumption during a cryptographic operation. ICS systems are often vulnerable to these two side-channel attacks
+
+
+▪ Timing Analysis 
+Passwords are often transmitted through a serial channel. Attackers employ a loop strategy to recover these passwords. 
+
+They use one character at a time to check whether the first character entered is correct; if so, the loop continues for consecutive characters.If not, the loop terminates.
+
+Attackers check how much time the device is taking to finish one complete password authentication process, through which they can determine how many characters entered are correct.
+
+The timing-based attacks can be easily detected and blocked.
+
+
+▪ Power Analysis
+Power-analysis attacks are difficult to detect; the attacked device can operate even after being infected. 
+
+Therefore, attackers often prefer to perform a power-analysis attack rather than a timing-based one to recover the sensitive information.
+
+This attack is performed observing the change in power consumption of semiconductors during clock cycles. 
+
+The oscilloscope observes the time slot between two pulses via the probe. The power profile formed by the signals can leave a clue as to in what way the data is being processed.
+
+
+Attackers can use the retrieved keys to make changes in the configuration of analyzed devices. 
+
+As these systems are mostly utilized in protecting the power grids, the configuration changes can have devastating impacts. 
+
+Through these changes, attackers can hinder the system process or use it to transfer incorrect data to the operator. 
+
+These devices are often distributed and handled by a centralized system. Incorrect data from one device can impact major parts of the OT network.
+
+
+
+
+
+
+
+
+
+
