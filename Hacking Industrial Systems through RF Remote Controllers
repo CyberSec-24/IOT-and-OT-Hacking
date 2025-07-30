@@ -1,0 +1,45 @@
+Most industrial machines are operated via remote controllers.
+
+These remote controllers are used in various industries, such as manufacturing, logistics, mining, and construction, for automation or to control machines. 
+
+Devices in a network use a transmitter (TX) and receiver (RX) to communicate with each other.
+
+While the transmitter (TX) passes radio commands (via buttons), the receiver (TX) reacts to the corresponding commands.
+
+Attackers can stand within the radius of the target system and use a specially designed radio transceiver-type device. 
+
+The device helps attackers to design their own packets and send them in a network to gain access over the industrial system and perform various malicious activities
+
+
+Listed below are threats industrial systems often face via RF remote controllers:
+
+▪ Replay Attack
+Attackers record the commands (RF packets) transmitted by an operator and replay them to the target system to gain basic control over the system
+
+
+▪ Command Injection
+Being aware of RF protocols, attackers can alter RF packets or inject their own packets employing reverse-engineering techniques to gain complete access over the machine. 
+
+Attackers capture and record commands, perform reverse engineering to derive other commands used to control the target device, and inject those commands to manipulate the normal operation of the target device
+
+▪ Abusing E-stop
+Using the above information, the attacker can send multiple e-stop (emergency stop) commands to the target device to cause DoS
+
+▪ Re-pairing with Malicious RF Controller
+An attacker can hijack the original remote controller and pair up with the machine using a malicious RF controller, disguised as a legitimate one.
+
+Attackers send malicious requests to pair with target RF controllers, capture the command sequence, hijack the legitimate controller, and use a malicious controller to perform various attacks on the target device
+
+Malicious Reprogramming Attack
+Attackers can inject malware into the firmware running on the remote controllers to maintain persistent and complete remote access over the target industrial system
+
+
+
+
+
+
+
+
+
+
+
