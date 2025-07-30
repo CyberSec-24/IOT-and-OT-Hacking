@@ -1,0 +1,94 @@
+Discussed below are some of the important threats faced by OT networks: 
+
+▪ Maintenance and Administrative Threat 
+Attackers exploit zero-day vulnerabilities to target the maintenance and administration of the OT network. 
+By exploiting these vulnerabilities, attackers inject and spread malware to IT systems and target connected industrial control systems such as SCADA and PLC.
+
+▪ Data Leakage
+Attackers may exploit IT systems connected to the OT network to gain access to the IT/OT gateway and steal operationally significant data such as configuration files.
+
+▪ Protocol Abuse Owing to compatibility issues, many OT systems use outdated legacy protocols and interfaces such as Modbus and CAN bus. 
+Attackers exploit these protocols and interfaces to perform various attacks on OT systems. 
+For example, attackers may abuse emergency stop (e-stop), which is a safety mechanism used to shut down the machinery in emergencies to execute single-packet attacks
+
+
+▪ Potential Destruction of ICS Resources
+Attackers exploit vulnerabilities in the OT systems to disrupt or degrade the functionality of the OT infrastructure, leading to life-and safety-critical issues.
+
+▪ Reconnaissance Attacks
+OT systems allow remote communication with minimal or no encryption or authentication mechanisms.
+Attackers can perform initial reconnaissance and scanning on the target OT infrastructure to gather information necessary for later stages of the attack.
+
+▪ Denial-of-Service 
+Attacks Attackers exploit communication protocols such as Common Industrial Protocol (CIP) to perform DoS attacks on the target OT systems. 
+For example, an attacker may send a malicious CIP connection request to a target device; once a connection is established, he/she may send a fake IP configuration to the device;
+if the device accepts the configuration, loss of communication may occur between the device and other connected systems
+
+▪ HMI-Based Attacks
+Human–Machine Interfaces (HMIs) are often called Hacker–Machine Interfaces. 
+Even with the advancement and automation of OT, human interaction and control over the operational process remain challenges due to the underlying vulnerabilities. 
+The lack of global standards for developing HMI software without any defense-in-depth security measures leads to many security problems. 
+Attackers exploit these vulnerabilities to perform various attacks such as memory corruption, code injection, privilege escalation, etc. on target OT systems.
+
+▪ Exploiting Enterprise-Specific Systems and Tools
+Attackers may target ICS devices such as Safety Instrumented Systems (SIS) to inject malware by exploiting underlying protocols to detect hardware and systems used in communications, and further disrupt or damage their services
+
+▪ Spear Phishing
+Attackers send fake emails containing malicious links or attachments, seemingly originated from legitimate or well-known sources to the victim. 
+When the victim clicks on the link or downloads the attachment, it injects malware, starts damaging the resources, and spreads itself to other systems. 
+For example, an attacker sends a fraudulent email with a malicious attachment to a victim system that maintains the sales software of the operational plant. 
+When the victim downloads the attachment, the malware is injected into the sales software, propagates itself to other networked systems, and finally damages industrial automation components
+
+▪ Malware Attacks
+Attackers are reusing legacy malware packages that were previously used to exploit IT systems for exploiting OT systems.
+They perform reconnaissance attacks to identify vulnerabilities in newly connected OT systems. 
+Once they detect vulnerabilities, they reuse the older malware versions to perform various attacks on the OT systems.
+In some scenarios, attackers also develop malware targeting OT systems, such as ICS/SCADA.
+
+▪ Exploiting Unpatched Vulnerabilities
+Attackers exploit unpatched vulnerabilities in ICS products, firmware, and other software used in OT networks.
+ICS vendors develop products that are reliable and provide high-speed, real-time performance with no built-in security features.
+In addition, these vendors cannot develop patches for the identified vulnerabilities with the same speed as IT vendors.
+For these reasons, attackers target and exploit ICS vulnerabilities to perform various attacks on OT networks.
+
+▪ Side-Channel Attacks Attackers perform side-channel attacks to retrieve critical information from an OT
+system by observing its physical implementation. Attackers use various techniques, such as timing analysis and power analysis, to perform side-channel attacks.
+
+▪ Buffer Overflow Attack
+The attacker exploits various buffer overflow vulnerabilities that exist in ICS software, such as HMI web interface, ICS web client, communications interfaces, etc., to inject malicious data and commands to modify the normal behavior and operation of the systems.
+
+▪ Exploiting RF Remote Controllers
+OT networks use RF technology to control various industrial operations remotely. RF communication protocols lack in-built security for remote communication.
+Vulnerabilities in these protocols can be exploited by the attackers to perform various attacks on industrial machines that lead to production sabotage, system control, and unauthorized access.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
