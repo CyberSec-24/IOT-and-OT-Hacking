@@ -1,0 +1,63 @@
+Discussed below are various SCADA vulnerabilities exploited by attackers to perform HMI -based attacks on industrial control systems: 
+
+▪ Memory Corruption The vulnerabilities in this category are code security issues that include out-of-bound read/write vulnerabilities and heap-and stack-based buffer overflow. 
+In an HMI, memory corruptions take place when the memory contents are altered due to errors residing in the code. 
+
+When these altered memory contents are used, the program crashes or performs unintended executions. 
+
+Attackers can accomplish memory corruption tasks simply by overwriting the code to cause a buffer overflow.
+
+Sometimes, the unflushed stack can also allow attackers to use string manipulation to abuse the program.
+
+
+▪ Credential Management
+The vulnerabilities in this category include the use of hard-coded passwords, saving credentials in simple formats such as cleartext, and inappropriate credential protection. 
+
+These vulnerabilities can be exploited by the attackers to gain admin access to the systems and alter system databases or other settings.
+
+
+▪ Lack of Authorization/Authentication and Insecure Defaults
+
+The vulnerabilities in this category include transmission of confidential information in cleartext, insecure defaults, missing encryption, and insecure ActiveX controls used for scripting.
+
+An authentic SCADA solution administrator can view and access the passwords of other users.
+
+Attackers can exploit these vulnerabilities to gain illegal access over the target system, and further record or manipulate the information being transmitted or stored.
+
+
+▪ Code Injection
+The vulnerabilities in this category include common code injections such as SQL, OS, command, and some domain-specific injections.
+
+Gamma is one of the prominent domain-specific languages for human–machine interfaces (HMIs) that is prone to code injection attacks.
+
+This script is designed to develop fast phase UI and control applications. 
+
+An evaluate, compile, and execute code at runtime (EvalExpression) vulnerability in Gamma can be exploited by attackers to send and execute controlled arbitrary scripts or commands on the target supervisory control and data acquisition (SCADA) system
+
+
+▪ Buffer Overflow Vulnerabilities
+Some HMI software may be prone to buffer overflow vulnerabilities, in which excessive data inputs can overflow the allocated buffer, potentially allowing an attacker to execute an arbitrary code on the system.
+
+
+▪ Path Traversal Path-traversal flaws in HMI web servers allow attackers to access directories and files stored outside the web-root folder, leading to information disclosure or manipulation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
