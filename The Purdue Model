@@ -1,0 +1,67 @@
+The Purdue model is derived from the Purdue Enterprise Reference Architecture (PERA) model, which is a widely used to describe internal connections and dependencies of important components in the ICS networks
+
+It consists of three zones:
+Manufacturing zone (OT) and Enterprise zone (IT) separated by a Demilitarized zone (DMZ). The three zones are further divided into several operational levels
+
+The Purdue model is derived from the Purdue Enterprise Reference Architecture (PERA) model, which is a widely used conceptual model that describes the internal connections and dependencies of important components in ICS networks. 
+
+The Purdue model is also known as the Industrial Automation and Control System reference model.
+
+
+The Purdue model consists of three zones:
+the manufacturing zone (OT) and enterprise zone (IT), separated by a demilitarized zone (DMZ), which is used to restrict direct communication between the OT and IT systems. 
+
+The intention behind adding this extra layer is to confine the network or system compromises within this layer and provide uninterrupted production.
+
+
+▪ Enterprise Zone (IT Systems)
+The enterprise security zone is a part of IT, in which supply-chain management and scheduling are performed using business systems such as SAP and ERP.
+It also locates the data centers, users, and cloud access. The enterprise zone consists of two levels.
+
+o Level 5 (Enterprise Network)
+This is a corporate level network where business operations such as B2B (business-to-business) and B2C (business-to-customer) services are performed. 
+Internet connectivity and management can be handled at this level. 
+The enterprise network systems also accumulate data from all the subsystems located at the individual plants to report the inventory and overall production status.
+
+o Level 4 (Business Logistics Systems)
+All the IT systems supporting the production process in the plant lie at this level.
+Managing schedules, planning, and other logistics of the manufacturing operations are performed here.
+Level 4 systems include application servers, file servers, database servers, supervising systems, email clients, etc.
+
+▪ Manufacturing Zone (OT Systems)
+All the devices, networks, control, and monitoring systems reside in this zone.
+The manufacturing zone consists of four levels. 
+
+o Level 3 (Operational Systems/Site Operations)
+In this level, the production management, individual plant monitoring, and control functions are defined. roduction workflows and output of the desired product are ensured at this level. 
+Production management includes plant performance management systems, production scheduling, batch management, quality assurance, data historians, manufacturing execution/operation management systems (MES/MOMS), laboratories, and process optimization.
+Production details from lower levels are collected here and can then be transferred to higher levels or can be instructed by higher-level systems.
+
+o Level 2 (Control Systems/Area Supervisory Controls)
+Supervising, monitoring, and controlling the physical process is carried out at this level. 
+The control systems can be DCSs, SCADA software, Human–Machine Interfaces (HMIs), real-time software, and other supervisory control systems such as engineering works and PLC line control.
+
+o Level 1 (Basic Controls/Intelligent Devices)
+Analyzation and alteration of the physical process can be done at this level.
+The operations in basic control include “start motors,” “open valves,” “move actuators,” etc. Level 1 systems include analyzers, process sensors, and other instrumentation systems such as Intelligent Electronic Devices (IEDs), PLCs, RTUs, Proportional Integral Derivative (PID) controllers, Equipment Under Control (EUC), and Variable
+
+o Level 0 (Physical Process)
+In this level, the actual physical process is defined, and the product is manufactured.
+Higher levels control and monitor operations at this level; therefore, this layer is also referred to as Equipment Under Control (EUC). 
+Level 0 systems include devices, sensors (e.g., speed, temperature, pressure), actuators, or other industrial equipment used to carry out the manufacturing or industrial operations. 
+A minor error in any of the devices at this level can affect overall operations
+
+
+▪ Industrial Demilitarized Zone (IDMZ)
+The demilitarized zone is a barrier between the manufacturing zone (OT systems) and enterprise zone (IT systems) that enables a secure network connection between the two systems. 
+
+The zone is created to inspect overall architecture. 
+
+If any errors or intrusions compromise the working systems, the IDMZ holds the error and allows production to be continued without interruption. 
+
+IDMZ systems include Microsoft domain controllers, database replication servers, and proxy servers
+
+
+
+
+
