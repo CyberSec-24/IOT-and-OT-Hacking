@@ -1,0 +1,126 @@
+Hardware Tools:
+▪ Signal Analyzer: Attackers use this tool to commence a test with flags to understand the binary operation of particular pins of a chip.
+
+
+▪ Multimeter: Attackers use multimeters or voltage meters to perform certain tests similar to the analyzer.
+
+▪ Microcontrollers and Memory Programmer: Attackers can use these tools to understand and program different types of chips, flash memories, EPROMs, etc.
+
+▪ Oscilloscope: Attackers use this tool to interpret accurate analog or digital signals.
+
+▪ Soldering Equipment: Attackers use soldering tools to attach and detach hardware components such as chips and memories, to examine them in an isolated environment and under certain conditions.
+
+▪ Digital Microscope or Magnifying Glass: Attackers can use these tools to improve precision in soldering components. 
+It can also help in reading some of the information written in small fonts or visualizing the tiny components on the device.
+
+▪ Communication Interface (such as JTAG): Attackers can use this to connect and communicate with ICS devices
+
+▪ Screwdrivers and Precision Screwdrivers: Attackers use this equipment to open or disassemble the devices to analyze the internal parts.
+
+▪ Precision Tweezers for Connection and Converters: Attackers can use connection tweezers, UART converter/serial ports to USB, etc., to capture information directly from the communication bus
+
+
+Software Tools: 
+▪ GDB Source: https://www.sourceware.org
+GDB is a debugging tool for Linux that allows attackers to comprehend the process of on-chip executions.
+
+▪ OpenOCD Source: https://openocd.org
+OpenOCD enables attackers to connect their system and the chip they want to examine.  The communication can be allowed using GDB in 333/port or using a telnet interface via 4444/TCP port.
+
+
+▪ Binwalk Source: https://github.com
+Binwalk helps attackers to scan and examine firmware binaries and images; it immediately displays different encryption types, sizes, partitions, filesystems involved, etc.
+
+
+▪ Fritzing Source: https://fritzing.org The Fritzing tool assists attackers in designing electronic diagrams and circuits.
+
+▪ Radare2 Source: https://github.com
+
+Radare2 is a portable framework that helps attackers to perform reverse engineering and various activities such as analyzing binaries
+
+
+▪ Ghidra Source: https://github.com
+Ghidra is a software reverse engineering (SRE) framework that enables attackers to analyze compiled code on a variety of platforms, including Windows, macOS, and Linux.
+This tool also supports the disassembly, assembly, decompilation, graphing, and scripting of code.
+
+▪ IDA Pro Source: https://hex-rays.com
+IDA Pro is a dissembler tool that can generate an assembly language source code from machine-executable code, making this complex code more human-readable
+
+
+Hacking Modbus Slaves 
+using Metasploit Modbus Master and Slaves communicate in plaintext without any authentication. 
+
+Attackers can exploit this vulnerability to generate and send similar query packets to Modbus slaves to access and manipulate Slave’s registers and coils. 
+
+Attackers can perform this attack only if the attacker’s machine can send packets to Modbus Slave and the packets sent use the Modbus protocol format. 
+
+Attackers use hacking tools such as Metasploit to perform various attacks on Modbus Slaves
+
+
+▪ Scanning Modbus Slaves 
+Attackers use auxiliary/scanner/scada/modbus_findunitid Metasploit module to scan and detect Modbus Slaves connected to the target network LAN or inside a Modbus gateway
+
+Manipulating Modbus Slave’s Data
+Attackers use the auxiliary/scanner/scada/modbusclient Metasploit module to read or write registers and coils on the target Modbus Slave
+
+
+Hacking PLC 
+using modbus-cli PLCs are used to control industrial infrastructure such as manufacturing facilities, waste and sewage plants, electrical grids, and petroleum refineries. 
+
+Attackers target PLC devices such as Schneider Electric TM221 that are used to automate processes in many manufacturing industries.
+
+These devices use the Modbus/TCP protocol to communicate with other industrial equipment. Attackers use tools such as modbus-cli to exploit PLC devices through Modbus protocol.
+
+
+
+▪ Step 1: Identify Internet-connected PLCs You can use tools such as Shodan, Nmap, etc. to find industrial facilities exposed on the Internet.
+
+To detect Schneider Electric TM221 PLCs connected to the Internet, type TM221ME16R into the Shodan search bar. 
+
+Shodan retrieves all the Schneider Electric TM221 PLCs connected to the Internet, where many of these systems are vulnerable.
+
+
+ Step 2: Install modbus-cli
+After identifying vulnerable PLC devices using Shodan, now install modbus-cli using the following command: gem install modbus-cli
+
+▪ Step 3: Understand datatypes
+Before exploitation using modbus-cli, you need to understand the data types used to read the values. 
+These datatypes use two types of addresses, namely, Schneider and Modicon addresses. A Schneider address starts with a %M before the address.
+
+ Step 4: Read register values
+To read the register values from the devices identified in step 1, use the following command: 
+Using Schneider address: modbus read <Target IP> %MW100 10 U
+sing Modicon address: modbus read <Target IP> 400101 10 The above command retrieves ten words from the registers
+
+ Step 5: Manipulate register values Now, you can manipulate the register values using the following commands:
+modbus write <Target IP> %MW100 2 2 2 2 2 2 2 2
+modbus write <Target IP> 400101 2 2 2 2 2 2 2 2 After running the above command, the first eight registers values are replaced with 2. 
+
+Step 6: Read coil values
+Now, try to retrieve the values of the coils. These values use Boolean data types to store ON/OFF (1/0) values.
+Run the following commands to retrieve coil values: modbus read <Target IP> 101 10 modbus read <Target IP> %M100 10
+
+Step 7: Manipulate coil values
+You can use modbus-cli to manipulate the coil values. Use the following commands to turn ON all the coils: 
+modbus write <Target IP> 101 1 1 1 1 1 1 1 1 1 1
+modbus write <Target IP> %M100 1 1 1 1 1 1 1 1 1 1 After running the above command, if you check the coil values, you will see all the coils with value 1
+
+ Step 8: 
+Capture data into the output file Now, you can capture the data from SCADA facilities for future analysis and testing. 
+Use the following command to capture register values into an output file: 
+modbus read --output SCADAregisters.txt <Target IP> 400101 200
+modbus read --output SCADAregisters.txt <Target IP> %MW100 200
+
+
+OT Hacking Tools
+
+Discussed below are various tools used by attackers to hack OT systems and networks:
+
+▪ mbtget Source: https://github.com
+
+mbtget is a command-line tool based on a Perl script to perform Modbus transactions. 
+This tool allows attackers to access both the TCP and RTU versions of the Modbus protocol through the MBclient object and target ICS systems and networks
+
+
+
+
